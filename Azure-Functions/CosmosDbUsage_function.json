@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "inputDocuments",
+      "connectionStringSetting": "psugh_DOCUMENTDB",
+      "databaseName": "cafeteria",
+      "collectionName": "orders",
+      "leaseCollectionName": "leases",
+      "createLeaseCollectionIfNotExists": true,
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
