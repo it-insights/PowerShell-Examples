@@ -9,7 +9,7 @@ class SingletonClass
 
     static [SingletonClass] GetInstance()
     {
-        if ([SingletonClass]::instance -eq $null)
+        if ($null -eq [SingletonClass]::instance)
         {
             [SingletonClass]::instance = [SingletonClass]::new()
         }
